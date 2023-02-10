@@ -200,3 +200,4 @@ cython_debug/
 *.jpg
 *.log
 *.xml
+settings.json
