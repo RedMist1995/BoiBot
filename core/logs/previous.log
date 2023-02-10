@@ -1,0 +1,122 @@
+[2023-02-09 19:28:35] [INFO] red: Loading packages...
+[2023-02-09 19:28:36] [INFO] red: Loaded packages: customcom, bank, economy, BoiCommands
+[2023-02-09 19:28:36] [INFO] red: Connected to Discord. Getting ready...
+[2023-02-09 19:31:39] [ERROR] red: Exception in command 'whosthatpokemon'
+Traceback (most recent call last):
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 323, in whosthatpokemon
+    message = await ctx.bot.wait_for(
+  File "/home/andrew/.pyenv/versions/3.8.6/lib/python3.8/asyncio/tasks.py", line 498, in wait_for
+    raise exceptions.TimeoutError()
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andrew/.pyenv/versions/discord/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 329, in whosthatpokemon
+    self.stop()
+AttributeError: 'Mycog' object has no attribute 'stop'
+[2023-02-09 19:32:35] [ERROR] red: Package loading failed
+Traceback (most recent call last):
+  File "/home/andrew/.pyenv/versions/discord/lib/python3.8/site-packages/redbot/core/core_commands.py", line 172, in _load
+    await bot.load_extension(spec)
+  File "/home/andrew/.pyenv/versions/discord/lib/python3.8/site-packages/redbot/core/bot.py", line 1554, in load_extension
+    lib = spec.loader.load_module()
+  File "<frozen importlib._bootstrap_external>", line 462, in _check_name_wrapper
+  File "<frozen importlib._bootstrap_external>", line 962, in load_module
+  File "<frozen importlib._bootstrap_external>", line 787, in load_module
+  File "<frozen importlib._bootstrap>", line 265, in _load_module_shim
+  File "<frozen importlib._bootstrap>", line 702, in _load
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/__init__.py", line 1, in <module>
+    from .mycog import Mycog
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 329
+    return False
+    ^
+SyntaxError: invalid syntax
+[2023-02-09 19:33:09] [ERROR] red: Exception in command 'whosthatpokemon'
+Traceback (most recent call last):
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 323, in whosthatpokemon
+    message = await ctx.bot.wait_for(
+  File "/home/andrew/.pyenv/versions/3.8.6/lib/python3.8/asyncio/tasks.py", line 498, in wait_for
+    raise exceptions.TimeoutError()
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andrew/.pyenv/versions/discord/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 327, in whosthatpokemon
+    if time.time() - self._last_response >= 15.0:
+AttributeError: 'Mycog' object has no attribute '_last_response'
+[2023-02-09 19:40:29] [ERROR] red: Exception in command 'whosthatpokemon'
+Traceback (most recent call last):
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 325, in whosthatpokemon
+    message = await ctx.bot.wait_for(
+  File "/home/andrew/.pyenv/versions/3.8.6/lib/python3.8/asyncio/tasks.py", line 498, in wait_for
+    raise exceptions.TimeoutError()
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andrew/.pyenv/versions/discord/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 329, in whosthatpokemon
+    if time.time() - last_response >= 15.0:
+NameError: name 'last_response' is not defined
+[2023-02-09 19:43:59] [ERROR] red: Exception in command 'whosthatpokemon'
+Traceback (most recent call last):
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 325, in whosthatpokemon
+    message = await ctx.bot.wait_for(
+  File "/home/andrew/.pyenv/versions/3.8.6/lib/python3.8/asyncio/tasks.py", line 498, in wait_for
+    raise exceptions.TimeoutError()
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andrew/.pyenv/versions/discord/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 329, in whosthatpokemon
+    if time.time() - last_response >= 15.0:
+NameError: name 'last_response' is not defined
+[2023-02-09 19:48:01] [ERROR] red: Exception in command 'whosthatpokemon'
+Traceback (most recent call last):
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 325, in whosthatpokemon
+    message = await ctx.bot.wait_for(
+  File "/home/andrew/.pyenv/versions/3.8.6/lib/python3.8/asyncio/tasks.py", line 498, in wait_for
+    raise exceptions.TimeoutError()
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andrew/.pyenv/versions/discord/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 329, in whosthatpokemon
+    if time.time() - last_response >= 15.0:
+NameError: name 'last_response' is not defined
+[2023-02-09 19:49:37] [ERROR] red: Exception in command 'whosthatpokemon'
+Traceback (most recent call last):
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 326, in whosthatpokemon
+    message = await ctx.bot.wait_for(
+  File "/home/andrew/.pyenv/versions/3.8.6/lib/python3.8/asyncio/tasks.py", line 498, in wait_for
+    raise exceptions.TimeoutError()
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/andrew/.pyenv/versions/discord/lib/python3.8/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/andrew/Discord/redbot/huntteam/customcogs/BoiCommands/mycog.py", line 330, in whosthatpokemon
+    if time.time() - last_response >= 15.0:
+NameError: name 'last_response' is not defined
+[2023-02-09 19:52:08] [INFO] red.main: Signals.SIGINT received. Quitting...
+[2023-02-09 19:52:08] [INFO] red.main: Shutting down with exit code: ExitCodes.SHUTDOWN
+[2023-02-09 19:52:08] [INFO] red.main: Please wait, cleaning up a bit more
