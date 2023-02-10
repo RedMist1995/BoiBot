@@ -198,3 +198,5 @@ cython_debug/
 #.idea/
 
 *.jpg
+*.log
+*.xml
