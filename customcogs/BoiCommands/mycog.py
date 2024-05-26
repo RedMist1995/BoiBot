@@ -9,6 +9,10 @@ import json
 import pypokedex
 import asyncio
 import time
+import pathlib
+import textwrap
+import google.generativeai as genai
+from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from datetime import date
 
 last_response = time.time()
@@ -377,3 +381,21 @@ class Mycog(commands.Cog):
             return False
 
         return _pred
+
+    @commands.command()
+    async def perryChat(self, ctx, message):
+        GOOGLE_API_KEY="AIzaSyDeXisHngEqJ-jgj5dGl9PnmLnM5888weM"
+        genai.configure(api_key=GOOGLE_API_KEY)
+        model = genai.GenerativeModel('gemini-1.5-flash')
+        chat = model.start_chat(history=[])
+        message = ("You are a chat bot with the persona of Commodore Perry. "
+                   "You should respond to any text within the delimiters '{'. "
+                   "Limit your responses to 150 words. " +
+                   "{"+message+"}")
+        response = chat.send_message(message, safety_settings={
+            HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_DANGEROUS: HarmBlockThreshold.BLOCK_NONE
+        })
+        await ctx.send(response)
